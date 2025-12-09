@@ -7,6 +7,10 @@
 
 Stereo Depth Estimation is a computer vision project that extracts depth information from a pair of images captured from two slightly different viewpoints. The goal is to understand how far objects are from the cameras by comparing the differences between the left and right images. This project builds a full stereo vision pipeline that includes image preprocessing, disparity map generation, and depth calculation. The notebook demonstrates how stereo matching works, how disparity is converted to depth, and how different parameter choices affect the accuracy of the final depth output. This repository is useful for students, researchers, and anyone who wants to learn how machines can perceive 3D structure from 2D images using simple geometric principles.
 
+<img width="1920" height="1035" alt="Image" src="https://github.com/user-attachments/assets/5a01028f-6eef-48d2-9b71-f40f1be18d27" />
+
+<img width="1920" height="1040" alt="Image" src="https://github.com/user-attachments/assets/7e336161-7eaf-4adf-bf3b-cd4678c71216" />
+
 ## Table of Contents
 
 - [Overview](#overview)  
@@ -57,6 +61,12 @@ The core concept is:
    \[
    \text{Depth} = \frac{\text{Baseline} \times \text{Focal Length}}{\text{Disparity}}
    \]
+   
+<img width="1920" height="1039" alt="Image" src="https://github.com/user-attachments/assets/0d1d2fa4-d95e-4e13-966f-bbaf4656c1de" />
+
+<img width="1920" height="1037" alt="Image" src="https://github.com/user-attachments/assets/e8c058c5-58cd-4403-9d55-046873237cda" />
+
+<img width="1920" height="1034" alt="Image" src="https://github.com/user-attachments/assets/0a7ed4e4-9c69-46a6-8452-8f066b27a7ec" />
 
 Pipeline (high level):
 
@@ -65,6 +75,12 @@ Pipeline (high level):
 3. Use stereo matching to compute a disparity map.  
 4. Convert disparity to depth using camera parameters (if available).  
 5. Visualize disparity and depth maps.
+
+<img width="1920" height="1037" alt="Image" src="https://github.com/user-attachments/assets/909f9414-dd2e-4b0a-85f9-69c5f36c3190" />
+<img width="1920" height="1035" alt="Image" src="https://github.com/user-attachments/assets/b39bebcb-f2d2-40c7-8fb3-1a1dea63070e" />
+<img width="1920" height="1034" alt="Image" src="https://github.com/user-attachments/assets/b2f9cd9f-1fe2-408a-98e0-36d0713e188a" />
+<img width="1920" height="1038" alt="Image" src="https://github.com/user-attachments/assets/8a086922-1b93-45a1-bbab-edeff4c020c4" />
+<img width="1920" height="1031" alt="Image" src="https://github.com/user-attachments/assets/3f45de10-dd6a-46f5-b5d3-ab269579561c" />
 
 ---
 
@@ -164,6 +180,10 @@ You can modify parameters and immediately see the effect on disparity and depth 
 * Depth accuracy depends on correct camera calibration (baseline, focal length, rectification).
 * Not optimized for real time performance.
 
+<img width="1920" height="1041" alt="Image" src="https://github.com/user-attachments/assets/87ec5af3-5ca7-40c5-a0d7-868511a6414d" />
+
+<img width="1920" height="1034" alt="Image" src="https://github.com/user-attachments/assets/0ddf7ef7-fc83-48e7-a53d-cfb155dc107d" />
+
 ---
 
 ## Future Improvements
@@ -175,6 +195,8 @@ Possible extensions:
 * Compare traditional stereo matching with deep learning based methods.
 * Add a simple command line or script version (outside the notebook).
 * Add support for different datasets and image resolutions.
+
+<img width="1920" height="1033" alt="Image" src="https://github.com/user-attachments/assets/91b1f96d-1f83-4a04-b613-407a22a27d00" />
 
 ---
 
